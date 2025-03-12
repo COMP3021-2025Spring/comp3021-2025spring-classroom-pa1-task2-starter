@@ -1,0 +1,51 @@
+{
+  "timeLastOpen": 1741564333,
+  "apiKey": "ENCRYPTED_KEY",
+  "totalPromptTokens": 68,
+  "clientName": "GPT-4o",
+  "timeLastExit": 1741620118,
+  "description": "I will use this session as a demo",
+  "tags": ["demo"],
+  "apiURL": "https://hkust.azure-api.net/openai/deployments/gpt-4o/chat/completions?api-version=2024-06-01",
+  "totalCompletionTokens": 273,
+  "maxTokens": 8192,
+  "temperature": 1,
+  "messages": {"contents": [
+    {
+      "role": "system",
+      "tokens": 0,
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "tokens": 31,
+      "content": "Do you know the person Professor Charles Chuan Zhang at HKUST?"
+    },
+    {
+      "role": "assistant",
+      "tokens": 71,
+      "content": "I'm sorry, but I don't have specific information about individuals, such as Professor Charles Chuan Zhang at Hong Kong University of Science and Technology (HKUST), beyond publicly available information as of my last update in October 2023. For specific details about his research or academic work, I recommend checking HKUST's official website or contacting the relevant department directly."
+    },
+    {
+      "role": "user",
+      "tokens": 21,
+      "content": "Do you know the course COMP 3021 of HKUST?"
+    },
+    {
+      "role": "assistant",
+      "tokens": 188,
+      "content": "Yes, COMP 3021 is a course offered by the Department of Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST). The course is typically titled \"Java Programming,\" although course names and content may vary slightly over time.\n\nThe course generally covers the principles of object-oriented programming using the Java programming language. Topics often include:\n\n- Basic and advanced Java syntax and semantics\n- Object-oriented programming concepts like classes, objects, inheritance, polymorphism, and interfaces\n- Exception handling and error management\n- Java libraries and frameworks\n- GUI programming in Java\n- Multithreading and concurrent programming\n\nThe course may also involve practical assignments and projects that require students to apply what they've learned by developing applications or solving programming problems.\n\nFor the most accurate and updated information, including course prerequisites, format, scheduling, and assessments, you should check the official HKUST course catalog or contact the Computer Science and Engineering department directly."
+    },
+    {
+      "role": "user",
+      "tokens": 16,
+      "content": "Do you remember who I asked about?"
+    },
+    {
+      "role": "assistant",
+      "tokens": 14,
+      "content": "Yes, you asked about Professor Charles Chuan Zhang at HKUST."
+    }
+  ]},
+  "timeCreated": 1741564333
+}
