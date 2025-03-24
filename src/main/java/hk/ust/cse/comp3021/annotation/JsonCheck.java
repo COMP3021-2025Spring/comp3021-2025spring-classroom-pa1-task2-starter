@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 
 /**
  * This annotation is used to check values does not change after serialization.
- * Any field annotated with {@link JsonFilter} will be checked whether equals to original value.
+ * Any field annotated with {@link JsonCheck} will be checked whether equals to original value.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
