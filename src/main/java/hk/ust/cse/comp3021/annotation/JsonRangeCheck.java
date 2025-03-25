@@ -18,3 +18,4 @@ import java.lang.annotation.Target;
  */
 // TODO: implement this annotation based on the description above, remember to add the min and max variable for three
 //  types of fields: int, long and double
+// Hint: you can either design the range as included or not included as long as you can pass the test.
