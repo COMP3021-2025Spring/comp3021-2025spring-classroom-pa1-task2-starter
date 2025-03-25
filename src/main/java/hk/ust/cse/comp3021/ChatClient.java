@@ -108,6 +108,8 @@ public abstract class ChatClient implements Serializable {
 
     /**
      * The messages to save all conversation history
+     * Hint: this could be annotated with JsonFilter, please also consider this in `fromJSON`
+     * you should replace those prohibited characters with * 
      */
     protected Messages messages = new Messages();
 
@@ -365,9 +367,10 @@ public abstract class ChatClient implements Serializable {
         // TODO: implement the deserialization, use reflection to check the annotation and type of each field to be
         //  deserialized and find their corresponding JSON key, then perform corresponding deserialization actions.
         //  Throw PersistenceException if any error occurs.
-        // Hint: remember to check some implicit constraints that are not presented in annotation: e.g.
+        // Hint1: remember to check some implicit constraints that are not presented in annotation: e.g.
         // totalPromptTokens == sum(message.tokens if message.role == "user"), we may include broken sessions in the
         // private tests and you should throw an PersistenceException if such constraint is violated.
+        // Hint2: the JSONObject provided for deserialization might not be valid, it may miss fields or add irrelavent fields.
         throw new PersistenceException("Not implemented yet");
     }
 
