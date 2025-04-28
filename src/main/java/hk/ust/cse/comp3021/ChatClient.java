@@ -104,12 +104,20 @@ public abstract class ChatClient implements Serializable {
      * The temperature of the ChatClient
      */
     @JsonRangeCheck(minDouble = 0, maxDouble = 2)
+    @JsonIgnore
     protected double temperature = 1;
 
     /**
      * The messages to save all conversation history
      */
+    @JsonFilter
     protected Messages messages = new Messages();
+
+    /**
+     * The unit USD price of a prompt token using one billion parameters
+     */
+    @JsonCheck
+    static final int unitPromptPrice = 1;
 
     /**
      * The tags for filtering ChatClient
