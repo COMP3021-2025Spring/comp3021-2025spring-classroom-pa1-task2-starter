@@ -487,6 +487,14 @@ public abstract class ChatClient implements Serializable {
                                 throw new JsonFilterException(fieldName);
                             }
                         }
+                    } else if (fieldValue instanceof JSONObject fieldJSONObject) {
+                        String fieldString = fieldJSONObject.toString();
+                        for (String kw : field.getAnnotation(JsonFilter.class).kwList()) {
+                            if (fieldString.contains(kw)) {
+                                Utils.printlnError("The field " + field.getName() + " contains prohibited information.");
+                                throw new JsonFilterException(fieldName);
+                            }
+                        }
                     }
                 }
 
